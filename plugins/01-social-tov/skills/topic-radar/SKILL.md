@@ -32,6 +32,6 @@ Score each raw finding against `clients/<client>/CLAUDE.md` and `tov/tov.md`:
 
 ## Step 3: Write Campaign Brief
 
-Save the selected campaign brief to `clients/<client>/campaigns/<sprint>/campaign-brief.json` matching `${GETKNOWN_CORE_ROOT:-./plugins/getknown-core}/schemas/campaign-brief.schema.json` (or `./schemas/campaign-brief.schema.json`): `campaignId`, `clientSlug`, `schemaVersion` (`"1.2.3"`), `topic`, `channels`, `goal`, and `sources`.
+Save the selected campaign brief to `clients/<client>/campaigns/<sprint>/campaign-brief.json` matching `${GETKNOWN_CORE_ROOT:-./plugins/getknown-core}/schemas/campaign-brief.schema.json` (or `./schemas/campaign-brief.schema.json`): `campaignId`, `clientSlug`, `schemaVersion` (`"1.3.0"`), `topic`, `channels`, `goal`, and `sources`.
 
 Ask the user which topic angle to turn into channel drafts via `/draft-post`.

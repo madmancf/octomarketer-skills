@@ -31,7 +31,7 @@ Analyze the samples across six concrete mechanics:
 
 ## Step 2: Save Voice Profile, Examples & Compile `tov.md`
 
-1. Write `clients/<client>/tov/tov-profile.json` (`"schemaVersion": "1.2.3"`) validated against `${CLAUDE_PLUGIN_ROOT}/schemas/tov-profile.schema.json` (or `./plugins/getknown-core/schemas/tov-profile.schema.json`), preserving any existing custom author/locale fields or learned `L-*` rules unless a full reset was explicitly requested.
+1. Write `clients/<client>/tov/tov-profile.json` (`"schemaVersion": "1.3.0"`) validated against `${CLAUDE_PLUGIN_ROOT}/schemas/tov-profile.schema.json` (or `./plugins/getknown-core/schemas/tov-profile.schema.json`), preserving any existing custom author/locale fields or learned `L-*` rules unless a full reset was explicitly requested.
 2. Save annotated winning posts to `clients/<client>/tov/winners/winner-01.md` (labeled `[Example]` if synthetic) and rejected examples to `clients/<client>/tov/anti-examples/slop-01.md`.
 3. Compile `clients/<client>/tov/tov.md` (`<= 250` lines) via the `gk tov` CLI (direct `Edit` on `tov/tov.md` is denied by `.claude/settings.json`):
    ```bash

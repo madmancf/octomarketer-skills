@@ -45,7 +45,7 @@ Run a focused positioning interview before drafting copy, slides, or video scrip
 Once confirmed, write `clients/<slug>/campaigns/<campaign-id>/campaign-brief.json` matching every required field of `${GETKNOWN_CORE_ROOT:-./plugins/getknown-core}/schemas/campaign-brief.schema.json` (or `./schemas/campaign-brief.schema.json`):
 - `campaignId` (`^[a-z0-9-]+$`)
 - `clientSlug` (`^[a-z0-9-]+$`)
-- `schemaVersion`: `"1.2.3"`
+- `schemaVersion`: `"1.3.0"`
 - `topic`: the locked campaign angle and hook claim (`>= 5` chars)
 - `channels`: array of active schema channels (`linkedin`, `instagram`, `x`, `tiktok`, `youtube-shorts`, `deck`, `landing-page`)
 - `goal`: measurable target outcome and audience action (`>= 5` chars)
