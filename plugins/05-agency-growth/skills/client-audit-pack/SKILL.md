@@ -1,14 +1,28 @@
 ---
 name: client-audit-pack
-description: Use when generating a 5-minute prospect pitch pack: 7-channel website teardown, prospect-branded HTML/PDF/PPTX audit deck, 2 sample posts, and 1 static benchmark infographic.
-argument-hint: "<prospect-url> [--client <slug>] [--crawl-depth 1|2|3] [--no-attribution]"
+description: Use when generating a 5-minute prospect pitch pack: 7-channel website teardown, prospect-branded HTML/PDF/PPTX audit deck (#10 standalone-audit-deck), 2 sample posts, and 1 static benchmark infographic (#11 standalone-infographic).
+argument-hint: "<prospect-url> [--template #10|#11|standalone-audit-deck|standalone-infographic] [--client <slug>] [--crawl-depth 1|2|3] [--no-attribution]"
 effort: high
-allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./plugins/getknown-core/bin/gk *), Bash(mkdir *), Bash(cp *), Read, Edit, Write, Agent
+allowed-tools: Bash(gk *), Bash(~/.local/bin/gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./plugins/getknown-core/bin/gk *), Bash(mkdir *), Bash(cp *), Read, Edit, Write, Agent
 ---
 
 # 5-Minute Prospect Teardown & Audit Pack (`/client-audit-pack`)
 
 Build a prospect-branded pitch kit from an explicit live URL in free local mode (`$0.00`), with optional SEO and outbound enrichment when BYOK keys are configured on your machine.
+
+## Shared Template Studio Catalog (`#10..#11` in `template-registry.json`)
+
+| Template `#` | Canonical Slug | Template Path | Deliverable |
+| :--- | :--- | :--- | :--- |
+| **`#10`** | `standalone-audit-deck` | `${CLAUDE_PLUGIN_ROOT}/templates/standalone-audit-deck.html` | 5-slide prospect-branded 7-channel website audit deck (`.html`, `.pdf`, `.pptx`). |
+| **`#11`** | `standalone-infographic` | `${CLAUDE_PLUGIN_ROOT}/templates/standalone-infographic.html` | Static 7-channel rubric vs 30-day target benchmark card (`.html`, `.png`). |
+
+*(Catalog source of truth: `plugins/getknown-core/templates/template-registry.json`.)*
+
+## Bidirectional Template Handshake (`#10..#11`)
+
+- **If the user already named `#10` (`standalone-audit-deck`), `#11` (`standalone-infographic`), or passed `<prospect-url>` for the full audit pack:** Execute immediately without redundant prompting.
+- **If the user invoked `/client-audit-pack` without picking a template or target URL yet:** Start `gk serve --daemon` (fallback `~/.local/bin/gk` or `./plugins/getknown-core/bin/gk`), share `http://127.0.0.1:<port>/templates?pack=gk-agency` (default `http://127.0.0.1:4318/templates?pack=gk-agency`), and ask for the prospect URL plus whether they want `#10 standalone-audit-deck`, `#11 standalone-infographic`, or the full pack (both `#10` and `#11` + 2 sample posts).
 
 ## Local & Connected Audit Inputs
 
@@ -24,16 +38,16 @@ Build a prospect-branded pitch kit from an explicit live URL in free local mode 
 Initialize `clients/<prospect-slug>/` first and pass an explicit `--url <prospect-url>` (include `--no-attribution` when white-labeling for an agency prospect):
 
 ```bash
-./plugins/getknown-core/bin/gk client init <prospect-slug> --url <prospect-url>
-./plugins/getknown-core/bin/gk brand-extract --client <prospect-slug> --url <prospect-url>
-./plugins/getknown-core/bin/gk teardown --client <prospect-slug> --url <prospect-url> --crawl-depth 2 [--no-attribution]
+gk client init <prospect-slug> --url <prospect-url>
+gk brand-extract --client <prospect-slug> --url <prospect-url>
+gk teardown --client <prospect-slug> --url <prospect-url> --crawl-depth 2 [--no-attribution]
 ```
 
-Then write `clients/<prospect-slug>/CLAUDE.md` (`<= 150` lines) and initialize `clients/<prospect-slug>/tov/tov.md` via `./plugins/getknown-core/bin/gk tov init --client <prospect-slug>`.
+Then write `clients/<prospect-slug>/CLAUDE.md` (`<= 150` lines) and initialize `clients/<prospect-slug>/tov/tov.md` via `gk tov init --client <prospect-slug>`.
 
-## Step 2: Build the 3 Pitch Deliverables
+## Step 2: Build the Pitch Deliverables (`#10` & `#11`)
 
-1. **5-Slide Branded Audit Deck (`standalone-audit-deck.html` + `.pdf` + `.pptx`):**
+1. **5-Slide Branded Audit Deck (`#10` `standalone-audit-deck.html` + `.pdf` + `.pptx`):**
    - Populate `${CLAUDE_PLUGIN_ROOT}/templates/standalone-audit-deck.html` (repo fallback `./plugins/05-agency-growth/templates/standalone-audit-deck.html`) from `brand/teardown-report.json` (keep `data-attribution-element="1"` on header/footer attribution badges only, never on `<body>`; pass `--no-attribution` on white-label exports):
      - Slide 1: Positioning & Brand Token Snapshot (with verified WCAG 2.2 contrast ratios)
      - Slide 2: All 7 Channel Heuristic Rubric Scores & Funnel Gaps (preserving all 7 channel cards in both HTML and `.pptx`)
@@ -41,7 +55,7 @@ Then write `clients/<prospect-slug>/CLAUDE.md` (`<= 150` lines) and initialize `
      - Slide 4: 30-Day Quick-Win Content Sprint Plan
      - Slide 5: Next Steps & Pilot Scope
    - Export PDF and PowerPoint copies via `gk export-pdf [--no-attribution]` and `gk export-pptx`.
-2. **1 Static Benchmark Infographic (`standalone-infographic.html` + `.png`):**
+2. **1 Static Benchmark Infographic (`#11` `standalone-infographic.html` + `.png`):**
    - Populate `${CLAUDE_PLUGIN_ROOT}/templates/standalone-infographic.html` comparing current 7-channel rubric scores against 30-day targets, and export PNG via `gk export-png`.
 3. **2 Sample Social Posts (`draft-pack.json`):**
    - Write 1 LinkedIn teardown post and 1 second-channel post grounded in real findings from `teardown-report.json` (zero invented case-study metrics), verified with `gk lint --file <post-path> --platform linkedin`.
@@ -49,5 +63,5 @@ Then write `clients/<prospect-slug>/CLAUDE.md` (`<= 150` lines) and initialize `
 ## Step 3: Package Local Review Bundle
 
 ```bash
-./plugins/getknown-core/bin/gk publish-review-link --client <prospect-slug> --campaign pitch-audit --provider local [--no-attribution]
+gk publish-review-link --client <prospect-slug> --campaign pitch-audit --provider local [--no-attribution]
 ```

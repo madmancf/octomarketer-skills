@@ -9,7 +9,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 ## Flow Contract & Checkpoint Recovery
 - **Owning Plugin:** `gk-design` (`02-design-decks-pages`), available directly as `/run-deck-or-page` (and `/gk-design:run-deck-or-page` in the `/` picker).
-- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus** (`opus`, default) for narrative outline; **Claude Sonnet** (`sonnet`) on `gk:gk-renderer` for HTML/PPTX/PDF/PNG generation.
+- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus 5.5** (`opus`, default) for narrative outline; **Claude Sonnet 5.5** (`sonnet`, `high` effort) on `gk:gk-renderer` for HTML/PPTX/PDF/PNG generation.
 - **Checkpoint State:** Ensure `clients/<slug>/` exists (`gk client init <slug>` if new), then run `gk flow start run-deck-or-page --client <slug>` (inspect or resume via `gk flow status --client <slug>`, fallback `./plugins/getknown-core/bin/gk`).
 - **Primary Outputs:** `clients/<slug>/campaigns/<id>/assets/{slide-deck.html,launch-page.html,banners.html}` and `exports/{slide-deck.pptx,slide-deck.pdf,banners-*.png}`
 

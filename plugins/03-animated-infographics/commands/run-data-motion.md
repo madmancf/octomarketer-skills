@@ -9,7 +9,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 ## Flow Contract & Checkpoint Recovery
 - **Owning Plugin:** `gk-motion` (`03-animated-infographics`), available directly as `/run-data-motion` (and `/gk-motion:run-data-motion` in the `/` picker).
-- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus** (`opus`, default) for data hierarchy; **Claude Sonnet** (`sonnet`) on `gk:gk-renderer`.
+- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus 5.5** (`opus`, default) for data hierarchy; **Claude Sonnet 5.5** (`sonnet`, `high` effort) on `gk:gk-renderer`.
 - **Checkpoint State:** Ensure `clients/<slug>/` exists (`gk client init <slug>` if new), then run `gk flow start run-data-motion --client <slug>` (inspect or resume via `gk flow status --client <slug>`, fallback `./plugins/getknown-core/bin/gk`).
 - **Primary Outputs:** `clients/<slug>/campaigns/<id>/exports/{infographic.png,infographic.pdf,infographic.mp4}`
 

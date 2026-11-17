@@ -14,7 +14,7 @@ Claude Code runs on your regular Claude Pro, Max, or Team subscription with zero
 
 | Operation | Subscription Model / Optional Paid Add-On | Typical Add-On Cost (USD) | Free / Included Default |
 |---|---|---|---|
-| **Claude Strategy & Writing** | **Claude Opus** (default strategy & decks) and **Claude Sonnet** (fast daily batches & lighter weekly allowance) | `$0.00` extra | Included in your `Claude.app` Pro, Max, or Team subscription |
+| **Claude Strategy & Writing** | **Claude Opus 5.5** (default strategy & decks) and **Claude Sonnet 5.5** (`high` effort, fast daily batches & lighter weekly allowance) | `$0.00` extra | Included in your `Claude.app` Pro, Max, or Team subscription |
 | **Hero / Slide Image (1x)** | Gemini Image (`GOOGLE_API_KEY`) | `$0.02 - $0.04` / image | Brand-tokenized HTML/SVG/PNG (`gk export-png`, `$0.00`) |
 | **Hero / Slide Image (1x)** | OpenRouter Flux / Recraft (`OPENROUTER_API_KEY`) | `$0.04 - $0.06` / image | Brand-tokenized HTML/SVG/PNG (`gk export-png`, `$0.00`) |
 | **Protected Website Crawl** | Firecrawl (`FIRECRAWL_API_KEY`) | `$0.01 - $0.05` / audit | Local headless Chromium `gk teardown` or saved `.html` page (`$0.00`) |

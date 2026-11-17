@@ -8,7 +8,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 # Parallel Subagent Sprint Orchestrator (`/parallel-sprint`)
 
-Delegate multi-page competitor research and multi-format visual rendering to isolated `Agent` subagents (`gk:gk-researcher` and `gk:gk-renderer`, running on **Claude Sonnet**) inside a single `Claude.app` `</> Code` session so raw HTML and asset builds stay out of the main writing context. *(Note: subagents via `Agent` work natively in both `Claude.app` Desktop and CLI.)*
+Delegate multi-page competitor research and multi-format visual rendering to isolated `Agent` subagents (`gk:gk-researcher` and `gk:gk-renderer`, running on **Claude Sonnet 5.5**) inside a single `Claude.app` `</> Code` session so raw HTML and asset builds stay out of the main writing context. *(Note: subagents via `Agent` work natively in both `Claude.app` Desktop and CLI.)*
 
 ## Step-by-Step Orchestration
 
@@ -25,7 +25,7 @@ Run `./plugins/getknown-core/bin/gk cost-check --client <slug> --estimated-usd 0
 ### Step 3: Dispatch Isolated Subagents
 - **Research & Site Audits -> `gk:gk-researcher` (`sonnet`):** Runs `gk brand-extract`, `gk teardown --crawl-depth 2`, and `gk harvest-proof`, writes structured outputs into `campaigns/<id>/sources/` and `assets/proof/`, and returns a `<= 1 KB` JSON envelope.
 - **Visual, Deck & Video Rendering -> `gk:gk-renderer` (`sonnet`):** Renders HTML compositions plus `gk export-pptx`, `gk export-pdf`, `gk export-png`, and `gk render-video` assets into `campaigns/<id>/assets/` and `exports/`, returning output paths and file sizes.
-- **Copy Finalization -> Main Thread (`Claude Opus`):** Keep final copy edits and `gk lint --file <draft> --platform linkedin` checks in the main thread so voice stays consistent across every asset.
+- **Copy Finalization -> Main Thread (`Claude Opus 5.5`):** Keep final copy edits and `gk lint --file <draft> --platform linkedin` checks in the main thread so voice stays consistent across every asset.
 
 ### Step 4: Unified Approval Board
 Merge lane outputs into `clients/<slug>/campaigns/<id>/drafts/draft-pack.json`, launch `./plugins/getknown-core/bin/gk serve --daemon`, and share the `/board?client=<slug>` URL for batch sign-off.

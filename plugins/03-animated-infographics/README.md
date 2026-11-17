@@ -13,5 +13,5 @@ Animated Infographics & Carousels: rebuild reference infographic layouts in your
 
 | Skill | Description | Source |
 |---|---|---|
-| `/build-infographic` | Use when rendering a 1080x1350 LinkedIn infographic as crisp PNG/PDF and 30fps animated MP4 in client brand tokens. | [SKILL.md](./skills/build-infographic/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/build-infographic/SKILL.md) |
+| `/build-infographic` | Use when rendering a 1080x1350 LinkedIn infographic (#01 comparison-grid, #02 step-by-step-flow, #03 iceberg-breakdown) as crisp PNG/PDF and 30fps animated MP4 in brand tokens. | [SKILL.md](./skills/build-infographic/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/build-infographic/SKILL.md) |
 | `/clone-layout-style` | Use when reverse-engineering a reference infographic grid, spacing rhythm, and motion curve without copying creator IP. | [SKILL.md](./skills/clone-layout-style/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md) |

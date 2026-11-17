@@ -8,7 +8,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 # Provider & Optional Add-On Connector (`/provider-connector`)
 
-Every installed workflow in your pack runs in **free local mode (`$0.00`)** using your regular Claude Pro, Max, or Team subscription (**Claude Opus** and **Claude Sonnet**), and connects to optional external services only when you configure keys on your machine.
+Every installed workflow in your pack runs in **free local mode (`$0.00`)** using your regular Claude Pro, Max, or Team subscription (**Claude Opus 5.5** and **Claude Sonnet 5.5**), and connects to optional external services only when you configure keys on your machine.
 
 ## Local Default vs. Optional Connected Services
 

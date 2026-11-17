@@ -44,7 +44,7 @@ Walk through these settings (shown visually on the Setup Guide page):
 1. **Open the `</> Code` Tab:** Open `Claude.app`, click **`</> Code`** at the top, and select your unzipped studio folder inside `Documents` (outside `Downloads`).
 2. **Keep Mode on `Local` + `Open folder...`:** Keep the session dropdown under the message box on **`Local`** so drafts and exports save directly into your folder.
 3. **Select `Accept edits`:** Choose **`Accept edits`** in the permission dropdown. `.claude/settings.json` pre-approves local `gk` commands and local `.zip` exports, prompts before cloud uploads (`vercel` / `cloudflare`) or `undo`, and protects `.env` / `.env.local` secrets while leaving `.env.example` readable.
-4. **Pick Your Model (Included in Claude Pro & Max):** Choose the latest **Claude Opus** (`opus`) model in `Claude.app` for brand strategy, voice guides, slide decks, and creative direction, or **Claude Sonnet** (`sonnet`) for fast daily post batches, hook variations, and background subagents (**Claude Haiku** `haiku` is also available for quick checks).
+4. **Pick Your Model (Included in Claude Pro & Max):** Choose **Claude Opus 5.5** (`claude-opus-5-5` / `opus`) in `Claude.app` for brand strategy, voice guides, slide decks, and creative direction, or **Claude Sonnet 5.5** (`claude-sonnet-5-5` / `sonnet`, `high` effort) for diagnostics, fast daily post batches, hook variations, and background subagents (**Claude Haiku 5.5** `haiku` is also available for quick checks).
 
 ## Step 4: Verify Secret Guard & Start Background Studio Server
 

@@ -15,6 +15,7 @@
   ],
   "skills": [
     "./skills/brand-extract",
+    "./skills/claude-md",
     "./skills/claude-md-builder",
     "./skills/cost-check",
     "./skills/discover-claude-code",

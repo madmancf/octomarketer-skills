@@ -13,5 +13,5 @@ Agency Prospect Audit & Content Repurposing: turn any public website URL into a 
 
 | Skill | Description | Source |
 |---|---|---|
-| `/client-audit-pack` | Use when generating a 5-minute prospect pitch pack: 7-channel website teardown, prospect-branded HTML/PDF/PPTX audit deck, 2 sample posts, and 1 static benchmark infographic. | [SKILL.md](./skills/client-audit-pack/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/client-audit-pack/SKILL.md) |
+| `/client-audit-pack` | Use when generating a 5-minute prospect pitch pack: 7-channel website teardown, prospect-branded HTML/PDF/PPTX audit deck (#10 standalone-audit-deck), 2 sample posts, and 1 static benchmark infographic (#11 standalone-infographic). | [SKILL.md](./skills/client-audit-pack/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/client-audit-pack/SKILL.md) |
 | `/repurpose-pack` | Use when turning a webinar transcript, course lesson, or long-form video into a multi-format social and content campaign matched to your installed pack. | [SKILL.md](./skills/repurpose-pack/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/repurpose-pack/SKILL.md) |

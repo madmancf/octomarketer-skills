@@ -9,7 +9,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 ## Flow Contract & Checkpoint Recovery
 - **Owning Plugin:** `gk` (`getknown-core`), available directly as `/run-brand-setup` (and `/gk:run-brand-setup` in the `/` picker).
-- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus** (`opus`, default) for orchestration and voice synthesis; **Claude Sonnet** (`sonnet`) for forked token extraction.
+- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus 5.5** (`opus`, default) for orchestration and voice synthesis; **Claude Sonnet 5.5** (`sonnet`, `high` effort) for forked token extraction.
 - **Checkpoint State:** Initialize `clients/<slug>/` first (`gk client init <slug>`), then start `gk flow start run-brand-setup --client <slug>` (inspect or resume via `gk flow status --client <slug>`, fallback `./plugins/getknown-core/bin/gk`).
 - **Primary Outputs:** `clients/<slug>/brand/{tokens.json,design.md}`, `clients/<slug>/tov/tov.md`, `clients/<slug>/CLAUDE.md`
 

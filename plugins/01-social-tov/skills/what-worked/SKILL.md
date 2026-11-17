@@ -25,4 +25,4 @@ Inspect `clients/<client>/campaigns/<sprint>/drafts/draft-pack.json` and the sav
    ```bash
    ./plugins/getknown-core/bin/gk tov apply --verdict clients/<client>/.getknown-approval.json --client <client>
    ```
-4. **Write Sprint Learnings to `campaigns/<sprint>/learnings.md`:** Record positioning insights, offer angles, and audience takeaways in `clients/<client>/campaigns/<sprint>/learnings.md`. **Never edit or mutate `clients/<client>/CLAUDE.md` or root `CLAUDE.md` during `/what-worked`** (use `/claude-md-builder` only when the user explicitly asks to revise `CLAUDE.md`).
+4. **Write Sprint Learnings to `campaigns/<sprint>/learnings.md`:** Record positioning insights, offer angles, and audience takeaways in `clients/<client>/campaigns/<sprint>/learnings.md`. **Never edit or mutate `clients/<client>/CLAUDE.md` or root `CLAUDE.md` during `/what-worked`** (use `/claude-md` only when the user explicitly asks to revise `CLAUDE.md`).

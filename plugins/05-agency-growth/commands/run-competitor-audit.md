@@ -9,7 +9,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 ## Flow Contract & Checkpoint Recovery
 - **Owning Plugin:** `gk-agency` (`05-agency-growth`), available directly as `/run-competitor-audit` (and `/gk-agency:run-competitor-audit` in the `/` picker).
-- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus** (`opus`, default) for teardown synthesis; **Claude Sonnet** (`sonnet`) for `gk:gk-researcher` SPA crawling and `gk:gk-renderer` deck/infographic output.
+- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus 5.5** (`opus`, default) for teardown synthesis; **Claude Sonnet 5.5** (`sonnet`, `high` effort) for `gk:gk-researcher` SPA crawling and `gk:gk-renderer` deck/infographic output.
 - **Checkpoint State:** Initialize `clients/<slug>/` first (`gk client init <slug> --url <prospect-url>`), then run `gk flow start run-competitor-audit --client <slug>` (inspect or resume via `gk flow status --client <slug>`, fallback `./plugins/getknown-core/bin/gk`).
 - **Primary Outputs:** `clients/<slug>/brand/teardown-report.json`, `clients/<slug>/campaigns/<id>/exports/{standalone-audit-deck.html,standalone-audit-deck.pdf,standalone-audit-deck.pptx,pitch-audit-review-pack.zip}`
 

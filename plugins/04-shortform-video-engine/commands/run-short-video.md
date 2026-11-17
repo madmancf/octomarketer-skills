@@ -9,7 +9,7 @@ allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./p
 
 ## Flow Contract & Checkpoint Recovery
 - **Owning Plugin:** `gk-video` (`04-shortform-video-engine`), available directly as `/run-short-video` (and `/gk-video:run-short-video` in the `/` picker).
-- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus** (`opus`, default) for beat-clock scripting; **Claude Sonnet** (`sonnet`) for proof harvesting and PiP compositing.
+- **Recommended Models (Included in Claude Pro & Max):** **Claude Opus 5.5** (`opus`, default) for beat-clock scripting; **Claude Sonnet 5.5** (`sonnet`, `high` effort) for proof harvesting and PiP compositing.
 - **Checkpoint State:** Initialize `clients/<slug>/` if new (`gk client init <slug> --url <url>`), then run `gk flow start run-short-video --client <slug>` (inspect or resume via `gk flow status --client <slug>`, fallback `./plugins/getknown-core/bin/gk`).
 - **Primary Outputs:** `clients/<slug>/campaigns/<id>/exports/reel-final.mp4`, `clients/<slug>/campaigns/<id>/drafts/reel-script.json`
 

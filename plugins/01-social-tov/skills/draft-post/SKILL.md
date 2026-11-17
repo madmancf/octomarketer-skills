@@ -42,6 +42,10 @@ What `gk lint` enforces:
 2. **Structural & Bullet Checks:** Blocks empty inputs, throat-clearing openers, copula avoidance (`serves as a`), false ranges, promotional inflation, stacked hedges, and bold-label bullet spam.
 3. **Platform Fold & Length Caps:** Enforces LinkedIn `<= 210` char fold, Instagram `<= 125` char fold, Telegram scannability, and platform max character limits.
 
-## Step 4: Save Draft Pack & Open Approval Board
+## Step 4: Save Draft Pack & Introduce the Approval Board (`/board`)
 
-Write the validated batch to `clients/<client>/campaigns/<sprint>/drafts/draft-pack.json` (with unreviewed items set to `verdict: "pending"`) matching `${GETKNOWN_CORE_ROOT:-./plugins/getknown-core}/schemas/draft-pack.schema.json` (or `./schemas/draft-pack.schema.json`), then launch `./plugins/getknown-core/bin/gk serve --daemon` and share the `/board?client=<client>` URL.
+Write the validated post variants to `clients/<client>/campaigns/<sprint>/drafts/draft-pack.json` (or `./campaigns/<sprint>/drafts/draft-pack.json`, with unreviewed items set to `verdict: "pending"`) matching `${GETKNOWN_CORE_ROOT:-./plugins/getknown-core}/schemas/draft-pack.schema.json`.
+
+Then start the local Studio server in background mode via `gk serve --daemon` (fallback `~/.local/bin/gk serve --daemon` or `./plugins/getknown-core/bin/gk serve --daemon`) and introduce the **Approval Board** cleanly:
+- Share the clickable URL `http://127.0.0.1:<port>/board?client=<client>` (default `http://127.0.0.1:4318/board`).
+- Explain in 2 short plain-English bullets that on `/board` they can edit any post inline, mark each variant `Approve`, `Request changes` (`Revise`), or `Reject` (`Skip`), and click **Save Review Decisions** + **Copy Reply for Claude.app** so Claude finalizes the winners and updates `tov/tov.md` via `/what-worked`.

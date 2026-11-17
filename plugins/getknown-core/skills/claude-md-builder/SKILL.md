@@ -1,39 +1,29 @@
 ---
 name: claude-md-builder
-description: Use when generating or compacting workspace and client CLAUDE.md instruction files within strict line caps.
-argument-hint: "[--client <slug>]"
+description: Backwards-compatible alias for /claude-md: create, update, or compact global (<=60 lines), project (<=120 lines), and per-client (<=150 lines) CLAUDE.md instruction files.
+argument-hint: "[--global | --project | --client <slug>]"
 effort: medium
-allowed-tools: Bash(gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./plugins/getknown-core/bin/gk *), Bash(mkdir *), Read, Edit, Write
+allowed-tools: Bash(gk *), Bash(~/.local/bin/gk *), Bash(./plugins/getknown-core/bin/gk *), Bash(node ./plugins/getknown-core/bin/gk *), Bash(mkdir *), Read, Edit, Write
 ---
 
-# Layered `CLAUDE.md` Builder & Auditor (`/claude-md-builder`)
+# Layered `CLAUDE.md` Builder & Auditor (`/claude-md-builder` -> `/claude-md`)
 
-Keep instruction files short and concrete so Claude follows every brand rule without skimming oversized prompt files.
+Backwards-compatible alias synced with `/claude-md` (`${CLAUDE_PLUGIN_ROOT}/skills/claude-md/SKILL.md`) for **Claude Opus 5.5** (`opus`) and **Claude Sonnet 5.5** (`sonnet`, `high` effort).
 
-## How the Layered Instruction Files Work
+## Governed Instruction Files & Line Caps
 
-1. **Personal Global File (`<= 60` lines):**
-   - Holds personal writing habits across projects (plain English, zero AI filler words, never commit `.env` secrets, check spend before paid API runs).
-   - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-global.tmpl.md` (repo fallback `./plugins/getknown-core/templates/claude-md-global.tmpl.md`).
-
-2. **Root Studio File (`./CLAUDE.md`, `<= 120` lines):**
-   - Defines client folder isolation (`clients/<slug>/`, ignoring `demo-brand` once a real brand exists), schema locations, and **only** the Outcome Workflows whose plugin directories are installed in `./plugins/`.
-   - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-root.tmpl.md` (repo fallback `./plugins/getknown-core/templates/claude-md-root.tmpl.md`).
-
-3. **Per-Client File (`./clients/<client-slug>/CLAUDE.md`, `<= 150` lines):**
-   - Scoped to one brand (for example `acme-cloud` or an agency prospect): target audience ICP, core offer, positioning, hard taboos, active channels, and pointers to `brand/tokens.json` and `tov/tov.md`.
-   - Keep detailed hex values in `brand/tokens.json` and full post examples in `tov/winners/` so the client instruction sheet stays `<= 150` lines.
-   - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-client.tmpl.md` (repo fallback `./plugins/getknown-core/templates/claude-md-client.tmpl.md`).
+1. **Personal Global File (`~/.claude/CLAUDE.md`, `<= 60` lines):**
+   - Personal identity, cross-project plain-English writing habits, privacy rules (never commit `.env` or paste API keys), and spend checks.
+   - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-global.tmpl.md` (`gk claude-md --global`).
+2. **Project / Root File (`./CLAUDE.md`, `<= 120` lines):**
+   - Brand summary, pointers to `./brand/design.md` and `./tov/tov.md`, Always-Active vs `0`-token `/`-invocable skill table (`#01..#70` template hints), and locked guardrails (or multi-client `clients/<slug>/` routing when using `claude-md-root.tmpl.md`).
+   - CLI: `gk claude-md --project` (syncs `.claude/settings.json` active packs automatically).
+3. **Per-Client Agency File (`./clients/<client-slug>/CLAUDE.md`, `<= 150` lines):**
+   - Scoped to one client brand (`gk client init <client-slug>`): audience ICP, core offer, positioning, hard taboos, and pointers to `brand/tokens.json` and `tov/tov.md`.
+   - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-client.tmpl.md`.
 
 ## Step-by-Step Execution
 
-1. **Collect Client Inputs:**
-   - `Client Name` and `client-slug` (initialize folder via `./plugins/getknown-core/bin/gk client init <client-slug>` if new)
-   - `Primary Website URL`
-   - `Target Audience / ICP` (1 to 2 sentences)
-   - `Core Offer & Positioning` (2 to 3 bullets)
-   - `Hard Taboos` (claims or phrasing this brand never uses)
-2. **Render From Template (Tier-Aware):**
-   - Inspect `./plugins/` and include only the workflows present in this pack when populating `claude-md-client.tmpl.md` or `claude-md-root.tmpl.md`.
-3. **Verify Line Caps:**
-   - Confirm line count stays within caps (`<= 60` global, `<= 120` studio root, `<= 150` per-client) before writing `clients/<slug>/CLAUDE.md`.
+1. **Collect Brand / Client Inputs:** Brand name, website URL, 1 to 2 sentence ICP, 2 to 3 offer bullets, and hard taboos.
+2. **Render & Sync Skill Profile:** Populate the matching template (filtering workflows to installed plugins when inside a partial release pack, or syncing `<!-- SKILL_PROFILE:START -->` via `gk claude-md --project`).
+3. **Verify Line Caps:** Confirm strict caps (`<= 60` global, `<= 120` project/root, `<= 150` per-client) before finishing.

@@ -29,7 +29,7 @@ Share the returned `setupUrl` and `explainerUrl` (default `http://127.0.0.1:4318
 2. **Prompt-Bar Controls in `</> Code`:**
    - **Folder Mode (`Local` + `Open folder...`):** Keep the dropdown under the message box on **`Local`** and select your unzipped studio folder inside `Documents`.
    - **Permission Mode:** Modes under the message box are **`Manual`**, **`Accept edits`** (recommended), **`Plan`**, and **`Auto`**.
-   - **Models (Included in Your Claude Pro or Max Subscription):** Choose the latest **Claude Opus** (`opus`) model in `Claude.app` for brand strategy, voice guides, flagship posts, slide decks, and creative direction. Switch to **Claude Sonnet** (`sonnet`) for fast daily post batches, hook variations, and lighter use of your weekly subscription allowance (**Claude Haiku** `haiku` is also available for quick checks).
+   - **Models (Included in Your Claude Pro or Max Subscription):** Choose **Claude Opus 5.5** (`claude-opus-5-5` / `opus`) in `Claude.app` for brand strategy, voice guides, flagship posts, slide decks, and creative direction. Switch to **Claude Sonnet 5.5** (`claude-sonnet-5-5` / `sonnet`, `high` effort) for diagnostics, fast daily post batches, hook variations, and lighter use of your weekly subscription allowance (**Claude Haiku 5.5** `haiku` is also available for quick checks).
    - **Plain English or Slash Commands:** Type a plain-English request (`"Audit https://example.com and build a 5-slide pitch deck"`) or a workflow command (`/run-brand-setup`, `/run-deck-or-page`, `/run-creative-director`, plus any pack-specific workflows in `./plugins/`).
 
 3. **One Folder Per Brand (`clients/<brand-name>/`):**
