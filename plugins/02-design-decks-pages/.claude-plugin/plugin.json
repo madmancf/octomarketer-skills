@@ -1,0 +1,20 @@
+{
+  "name": "gk-design",
+  "version": "1.2.3",
+  "description": "Brand Design, Slide Decks & Campaign Pages: multi-size PNG social banners, 16:9 and 4:5 HTML, PDF, and editable PowerPoint slide decks, and standalone conversion landing pages.",
+  "author": {
+    "name": "GetKnown Marketing Studio"
+  },
+  "keywords": [
+    "design-system",
+    "banners",
+    "slide-decks",
+    "pptx",
+    "landing-pages"
+  ],
+  "skills": [
+    "./skills/brand-banners",
+    "./skills/launch-page",
+    "./skills/slide-deck"
+  ]
+}

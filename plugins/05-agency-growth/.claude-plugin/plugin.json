@@ -1,0 +1,19 @@
+{
+  "name": "gk-agency",
+  "version": "1.2.3",
+  "description": "Agency Prospect Audit & Content Repurposing: turn any public website URL into a 5-slide branded audit deck, 2 sample social posts, and 1 benchmark graphic before sales calls, or repurpose one webinar into a full campaign sprint.",
+  "author": {
+    "name": "GetKnown Marketing Studio"
+  },
+  "keywords": [
+    "agency-leadgen",
+    "client-audit",
+    "repurposing",
+    "pitch-deck",
+    "b2b-marketing"
+  ],
+  "skills": [
+    "./skills/client-audit-pack",
+    "./skills/repurpose-pack"
+  ]
+}

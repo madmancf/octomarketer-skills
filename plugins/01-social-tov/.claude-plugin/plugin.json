@@ -1,0 +1,21 @@
+{
+  "name": "gk-social",
+  "version": "1.2.3",
+  "description": "Social Content & Brand Voice Engine: industry topic radar, plain-English drafting for LinkedIn, Instagram, X, and Telegram, visual Approval Board review, and voice learning from approved edits.",
+  "author": {
+    "name": "GetKnown Marketing Studio"
+  },
+  "keywords": [
+    "social-media",
+    "linkedin",
+    "instagram",
+    "telegram",
+    "tone-of-voice",
+    "copywriting"
+  ],
+  "skills": [
+    "./skills/draft-post",
+    "./skills/topic-radar",
+    "./skills/what-worked"
+  ]
+}

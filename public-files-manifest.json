@@ -1,0 +1,1113 @@
+{
+  "schema": "octomarketer-public-files-manifest-v1",
+  "repo": "madmancf/octomarketer-skills",
+  "branch": "main",
+  "repoUrl": "https://github.com/madmancf/octomarketer-skills",
+  "blobBaseUrl": "https://github.com/madmancf/octomarketer-skills/blob/main",
+  "treeBaseUrl": "https://github.com/madmancf/octomarketer-skills/tree/main",
+  "rawBaseUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main",
+  "models": {
+    "primary": {
+      "name": "Claude Opus 5.5",
+      "id": "claude-opus-5-5",
+      "alias": "opus"
+    },
+    "fast": {
+      "name": "Claude Sonnet 5.5",
+      "id": "claude-sonnet-5-5",
+      "alias": "sonnet",
+      "defaultEffort": "high"
+    }
+  },
+  "counts": {
+    "plugins": 7,
+    "skills": 30,
+    "commands": 7,
+    "agents": 2,
+    "templates": 0,
+    "files": 56
+  },
+  "plugins": {
+    "gk": {
+      "id": "gk",
+      "dir": "plugins/getknown-core",
+      "dirName": "getknown-core",
+      "version": "1.2.3",
+      "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+      "path": "plugins/getknown-core/.claude-plugin/plugin.json",
+      "readmePath": "plugins/getknown-core/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/getknown-core",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/README.md",
+      "skills": [
+        "brand-extract",
+        "claude-md-builder",
+        "cost-check",
+        "discover-claude-code",
+        "panic-undo",
+        "provider-connector",
+        "quickstart",
+        "review-board",
+        "setup-marketer",
+        "tov-extract"
+      ],
+      "commands": [
+        "run-brand-setup"
+      ],
+      "agents": [
+        "gk-renderer",
+        "gk-researcher"
+      ]
+    },
+    "gk-social": {
+      "id": "gk-social",
+      "dir": "plugins/01-social-tov",
+      "dirName": "01-social-tov",
+      "version": "1.2.3",
+      "description": "Social Content & Brand Voice Engine: industry topic radar, plain-English drafting for LinkedIn, Instagram, X, and Telegram, visual Approval Board review, and voice learning from approved edits.",
+      "path": "plugins/01-social-tov/.claude-plugin/plugin.json",
+      "readmePath": "plugins/01-social-tov/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/01-social-tov",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/README.md",
+      "skills": [
+        "draft-post",
+        "topic-radar",
+        "what-worked"
+      ],
+      "commands": [
+        "run-daily-social"
+      ],
+      "agents": []
+    },
+    "gk-design": {
+      "id": "gk-design",
+      "dir": "plugins/02-design-decks-pages",
+      "dirName": "02-design-decks-pages",
+      "version": "1.2.3",
+      "description": "Brand Design, Slide Decks & Campaign Pages: multi-size PNG social banners, 16:9 and 4:5 HTML, PDF, and editable PowerPoint slide decks, and standalone conversion landing pages.",
+      "path": "plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "readmePath": "plugins/02-design-decks-pages/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/02-design-decks-pages",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/README.md",
+      "skills": [
+        "brand-banners",
+        "launch-page",
+        "slide-deck"
+      ],
+      "commands": [
+        "run-deck-or-page"
+      ],
+      "agents": []
+    },
+    "gk-motion": {
+      "id": "gk-motion",
+      "dir": "plugins/03-animated-infographics",
+      "dirName": "03-animated-infographics",
+      "version": "1.2.3",
+      "description": "Animated Infographics & Carousels: rebuild reference infographic layouts in your brand palette and export 1080x1350 PNG and PDF carousel cards plus animated MP4 visuals.",
+      "path": "plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "readmePath": "plugins/03-animated-infographics/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/03-animated-infographics",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/README.md",
+      "skills": [
+        "build-infographic",
+        "clone-layout-style"
+      ],
+      "commands": [
+        "run-data-motion"
+      ],
+      "agents": []
+    },
+    "gk-video": {
+      "id": "gk-video",
+      "dir": "plugins/04-shortform-video-engine",
+      "dirName": "04-shortform-video-engine",
+      "version": "1.2.3",
+      "description": "Short-Form Video & Talking-Head PiP Reel Engine (9:16): write 60-second website teardown scripts, capture live proof screenshots, trim silences and retakes locally on your Mac, render 1080x1920 Picture-in-Picture reels, and package platform captions.",
+      "path": "plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "readmePath": "plugins/04-shortform-video-engine/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/04-shortform-video-engine",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/README.md",
+      "skills": [
+        "brand-teardown-script",
+        "harvest-visual-proof",
+        "publish-shortform",
+        "render-avatar-reel",
+        "splicebay-studio"
+      ],
+      "commands": [
+        "run-short-video"
+      ],
+      "agents": []
+    },
+    "gk-agency": {
+      "id": "gk-agency",
+      "dir": "plugins/05-agency-growth",
+      "dirName": "05-agency-growth",
+      "version": "1.2.3",
+      "description": "Agency Prospect Audit & Content Repurposing: turn any public website URL into a 5-slide branded audit deck, 2 sample social posts, and 1 benchmark graphic before sales calls, or repurpose one webinar into a full campaign sprint.",
+      "path": "plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "readmePath": "plugins/05-agency-growth/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/05-agency-growth",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/README.md",
+      "skills": [
+        "client-audit-pack",
+        "repurpose-pack"
+      ],
+      "commands": [
+        "run-competitor-audit"
+      ],
+      "agents": []
+    },
+    "gk-director": {
+      "id": "gk-director",
+      "dir": "plugins/06-brainstorm-and-director",
+      "dirName": "06-brainstorm-and-director",
+      "version": "1.2.3",
+      "description": "Creative Director, Motion Styles & Direct-Response Copy: focused campaign positioning questions (/brainstorm-angle), precision UI and motion polish (/emil-design-polish), 99 commercial motion presets (/opuscar-director), classic direct-response copywriting structures (/copy-legend), and parallel multi-brand sprints (/parallel-sprint).",
+      "path": "plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "readmePath": "plugins/06-brainstorm-and-director/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/06-brainstorm-and-director",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/README.md",
+      "skills": [
+        "brainstorm-angle",
+        "copy-legend",
+        "emil-design-polish",
+        "opuscar-director",
+        "parallel-sprint"
+      ],
+      "commands": [
+        "run-creative-director"
+      ],
+      "agents": []
+    }
+  },
+  "pluginsByDir": {
+    "getknown-core": {
+      "id": "gk",
+      "dir": "plugins/getknown-core",
+      "dirName": "getknown-core",
+      "version": "1.2.3",
+      "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+      "path": "plugins/getknown-core/.claude-plugin/plugin.json",
+      "readmePath": "plugins/getknown-core/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/getknown-core",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/README.md",
+      "skills": [
+        "brand-extract",
+        "claude-md-builder",
+        "cost-check",
+        "discover-claude-code",
+        "panic-undo",
+        "provider-connector",
+        "quickstart",
+        "review-board",
+        "setup-marketer",
+        "tov-extract"
+      ],
+      "commands": [
+        "run-brand-setup"
+      ],
+      "agents": [
+        "gk-renderer",
+        "gk-researcher"
+      ]
+    },
+    "01-social-tov": {
+      "id": "gk-social",
+      "dir": "plugins/01-social-tov",
+      "dirName": "01-social-tov",
+      "version": "1.2.3",
+      "description": "Social Content & Brand Voice Engine: industry topic radar, plain-English drafting for LinkedIn, Instagram, X, and Telegram, visual Approval Board review, and voice learning from approved edits.",
+      "path": "plugins/01-social-tov/.claude-plugin/plugin.json",
+      "readmePath": "plugins/01-social-tov/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/01-social-tov",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/README.md",
+      "skills": [
+        "draft-post",
+        "topic-radar",
+        "what-worked"
+      ],
+      "commands": [
+        "run-daily-social"
+      ],
+      "agents": []
+    },
+    "02-design-decks-pages": {
+      "id": "gk-design",
+      "dir": "plugins/02-design-decks-pages",
+      "dirName": "02-design-decks-pages",
+      "version": "1.2.3",
+      "description": "Brand Design, Slide Decks & Campaign Pages: multi-size PNG social banners, 16:9 and 4:5 HTML, PDF, and editable PowerPoint slide decks, and standalone conversion landing pages.",
+      "path": "plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "readmePath": "plugins/02-design-decks-pages/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/02-design-decks-pages",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/README.md",
+      "skills": [
+        "brand-banners",
+        "launch-page",
+        "slide-deck"
+      ],
+      "commands": [
+        "run-deck-or-page"
+      ],
+      "agents": []
+    },
+    "03-animated-infographics": {
+      "id": "gk-motion",
+      "dir": "plugins/03-animated-infographics",
+      "dirName": "03-animated-infographics",
+      "version": "1.2.3",
+      "description": "Animated Infographics & Carousels: rebuild reference infographic layouts in your brand palette and export 1080x1350 PNG and PDF carousel cards plus animated MP4 visuals.",
+      "path": "plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "readmePath": "plugins/03-animated-infographics/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/03-animated-infographics",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/README.md",
+      "skills": [
+        "build-infographic",
+        "clone-layout-style"
+      ],
+      "commands": [
+        "run-data-motion"
+      ],
+      "agents": []
+    },
+    "04-shortform-video-engine": {
+      "id": "gk-video",
+      "dir": "plugins/04-shortform-video-engine",
+      "dirName": "04-shortform-video-engine",
+      "version": "1.2.3",
+      "description": "Short-Form Video & Talking-Head PiP Reel Engine (9:16): write 60-second website teardown scripts, capture live proof screenshots, trim silences and retakes locally on your Mac, render 1080x1920 Picture-in-Picture reels, and package platform captions.",
+      "path": "plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "readmePath": "plugins/04-shortform-video-engine/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/04-shortform-video-engine",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/README.md",
+      "skills": [
+        "brand-teardown-script",
+        "harvest-visual-proof",
+        "publish-shortform",
+        "render-avatar-reel",
+        "splicebay-studio"
+      ],
+      "commands": [
+        "run-short-video"
+      ],
+      "agents": []
+    },
+    "05-agency-growth": {
+      "id": "gk-agency",
+      "dir": "plugins/05-agency-growth",
+      "dirName": "05-agency-growth",
+      "version": "1.2.3",
+      "description": "Agency Prospect Audit & Content Repurposing: turn any public website URL into a 5-slide branded audit deck, 2 sample social posts, and 1 benchmark graphic before sales calls, or repurpose one webinar into a full campaign sprint.",
+      "path": "plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "readmePath": "plugins/05-agency-growth/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/05-agency-growth",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/README.md",
+      "skills": [
+        "client-audit-pack",
+        "repurpose-pack"
+      ],
+      "commands": [
+        "run-competitor-audit"
+      ],
+      "agents": []
+    },
+    "06-brainstorm-and-director": {
+      "id": "gk-director",
+      "dir": "plugins/06-brainstorm-and-director",
+      "dirName": "06-brainstorm-and-director",
+      "version": "1.2.3",
+      "description": "Creative Director, Motion Styles & Direct-Response Copy: focused campaign positioning questions (/brainstorm-angle), precision UI and motion polish (/emil-design-polish), 99 commercial motion presets (/opuscar-director), classic direct-response copywriting structures (/copy-legend), and parallel multi-brand sprints (/parallel-sprint).",
+      "path": "plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "readmePath": "plugins/06-brainstorm-and-director/README.md",
+      "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/06-brainstorm-and-director",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "readmeBlobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/README.md",
+      "readmeRawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/README.md",
+      "skills": [
+        "brainstorm-angle",
+        "copy-legend",
+        "emil-design-polish",
+        "opuscar-director",
+        "parallel-sprint"
+      ],
+      "commands": [
+        "run-creative-director"
+      ],
+      "agents": []
+    }
+  },
+  "skills": {
+    "brainstorm-angle": {
+      "slug": "brainstorm-angle",
+      "slash": "/brainstorm-angle",
+      "pluginId": "gk-director",
+      "pluginDir": "plugins/06-brainstorm-and-director",
+      "description": "Use before drafting any campaign, landing page, deck, or video to run a 1-question-at-a-time interview that locks topic, channels, goal, and sources into a campaign brief.",
+      "path": "plugins/06-brainstorm-and-director/skills/brainstorm-angle/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/brainstorm-angle/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/brainstorm-angle/SKILL.md"
+    },
+    "brand-banners": {
+      "slug": "brand-banners",
+      "slash": "/brand-banners",
+      "pluginId": "gk-design",
+      "pluginDir": "plugins/02-design-decks-pages",
+      "description": "Use when generating branded social media banners (1200x628, 1080x1350, 1080x1080, 1080x1920) in HTML/SVG and exporting high-DPI PNGs.",
+      "path": "plugins/02-design-decks-pages/skills/brand-banners/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/skills/brand-banners/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/skills/brand-banners/SKILL.md"
+    },
+    "brand-extract": {
+      "slug": "brand-extract",
+      "slash": "/brand-extract",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when given a website URL or local HTML file to extract brand colors, fonts, and WCAG 2.2 AA contrast pairs into your brand folder.",
+      "path": "plugins/getknown-core/skills/brand-extract/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/brand-extract/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/brand-extract/SKILL.md"
+    },
+    "brand-teardown-script": {
+      "slug": "brand-teardown-script",
+      "slash": "/brand-teardown-script",
+      "pluginId": "gk-video",
+      "pluginDir": "plugins/04-shortform-video-engine",
+      "description": "Use when scripting a 60-second 9:16 brand teardown video scored by the 4-factor hook retention model and 3.2 words/sec beat budget.",
+      "path": "plugins/04-shortform-video-engine/skills/brand-teardown-script/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/brand-teardown-script/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/brand-teardown-script/SKILL.md"
+    },
+    "build-infographic": {
+      "slug": "build-infographic",
+      "slash": "/build-infographic",
+      "pluginId": "gk-motion",
+      "pluginDir": "plugins/03-animated-infographics",
+      "description": "Use when rendering a 1080x1350 LinkedIn infographic as crisp PNG/PDF and 30fps animated MP4 in client brand tokens.",
+      "path": "plugins/03-animated-infographics/skills/build-infographic/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/skills/build-infographic/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/build-infographic/SKILL.md"
+    },
+    "claude-md-builder": {
+      "slug": "claude-md-builder",
+      "slash": "/claude-md-builder",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when generating or compacting workspace and client CLAUDE.md instruction files within strict line caps.",
+      "path": "plugins/getknown-core/skills/claude-md-builder/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/claude-md-builder/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/claude-md-builder/SKILL.md"
+    },
+    "client-audit-pack": {
+      "slug": "client-audit-pack",
+      "slash": "/client-audit-pack",
+      "pluginId": "gk-agency",
+      "pluginDir": "plugins/05-agency-growth",
+      "description": "Use when generating a 5-minute prospect pitch pack: 7-channel website teardown, prospect-branded HTML/PDF/PPTX audit deck, 2 sample posts, and 1 static benchmark infographic.",
+      "path": "plugins/05-agency-growth/skills/client-audit-pack/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/skills/client-audit-pack/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/client-audit-pack/SKILL.md"
+    },
+    "clone-layout-style": {
+      "slug": "clone-layout-style",
+      "slash": "/clone-layout-style",
+      "pluginId": "gk-motion",
+      "pluginDir": "plugins/03-animated-infographics",
+      "description": "Use when reverse-engineering a reference infographic grid, spacing rhythm, and motion curve without copying creator IP.",
+      "path": "plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md"
+    },
+    "copy-legend": {
+      "slug": "copy-legend",
+      "slash": "/copy-legend",
+      "pluginId": "gk-director",
+      "pluginDir": "plugins/06-brainstorm-and-director",
+      "description": "Use when drafting or rewriting headlines, landing pages, emails, or social posts through proven direct-response and editorial copywriting lenses.",
+      "path": "plugins/06-brainstorm-and-director/skills/copy-legend/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/copy-legend/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/copy-legend/SKILL.md"
+    },
+    "cost-check": {
+      "slug": "cost-check",
+      "slash": "/cost-check",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use before running optional external paid APIs to check or reserve estimated USD spend against per-run and daily safety limits.",
+      "path": "plugins/getknown-core/skills/cost-check/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/cost-check/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/cost-check/SKILL.md"
+    },
+    "discover-claude-code": {
+      "slug": "discover-claude-code",
+      "slash": "/discover-claude-code",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when onboarding a marketer to Claude Desktop, explaining brand folders, slash commands, and visual browser pages.",
+      "path": "plugins/getknown-core/skills/discover-claude-code/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md"
+    },
+    "draft-post": {
+      "slug": "draft-post",
+      "slash": "/draft-post",
+      "pluginId": "gk-social",
+      "pluginDir": "plugins/01-social-tov",
+      "description": "Use when drafting LinkedIn, Instagram, X, or Telegram posts in the client Tone of Voice verified by readability checks.",
+      "path": "plugins/01-social-tov/skills/draft-post/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/skills/draft-post/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/skills/draft-post/SKILL.md"
+    },
+    "emil-design-polish": {
+      "slug": "emil-design-polish",
+      "slash": "/emil-design-polish",
+      "pluginId": "gk-director",
+      "pluginDir": "plugins/06-brainstorm-and-director",
+      "description": "Use when building or reviewing landing pages, slide decks, interactive HTML boards, or UI animations with precision spring-physics UI and motion polish.",
+      "path": "plugins/06-brainstorm-and-director/skills/emil-design-polish/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/emil-design-polish/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/emil-design-polish/SKILL.md"
+    },
+    "harvest-visual-proof": {
+      "slug": "harvest-visual-proof",
+      "slash": "/harvest-visual-proof",
+      "pluginId": "gk-video",
+      "pluginDir": "plugins/04-shortform-video-engine",
+      "description": "Use when capturing high-DPI website, headline, and pricing proof screenshots for a short-form teardown video or audit deck.",
+      "path": "plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md"
+    },
+    "launch-page": {
+      "slug": "launch-page",
+      "slash": "/launch-page",
+      "pluginId": "gk-design",
+      "pluginDir": "plugins/02-design-decks-pages",
+      "description": "Use when building a conversion-focused lead-magnet, webinar, or course landing page exported as a self-contained HTML bundle.",
+      "path": "plugins/02-design-decks-pages/skills/launch-page/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/skills/launch-page/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/skills/launch-page/SKILL.md"
+    },
+    "opuscar-director": {
+      "slug": "opuscar-director",
+      "slash": "/opuscar-director",
+      "pluginId": "gk-director",
+      "pluginDir": "plugins/06-brainstorm-and-director",
+      "description": "Use when directing code-generated films, animated explainers, or parameterized ad batches using Lemo-Opuscar (99 upstream styles), Remotion, or the HTML stage compositor.",
+      "path": "plugins/06-brainstorm-and-director/skills/opuscar-director/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/opuscar-director/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/opuscar-director/SKILL.md"
+    },
+    "panic-undo": {
+      "slug": "panic-undo",
+      "slash": "/panic-undo",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when the user wants to preview or roll back the last change to their voice file, brand design guide, instruction sheet, or campaign drafts.",
+      "path": "plugins/getknown-core/skills/panic-undo/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/panic-undo/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/panic-undo/SKILL.md"
+    },
+    "parallel-sprint": {
+      "slug": "parallel-sprint",
+      "slash": "/parallel-sprint",
+      "pluginId": "gk-director",
+      "pluginDir": "plugins/06-brainstorm-and-director",
+      "description": "Use when running multi-channel campaign launches, multi-prospect agency teardowns, or batch asset production across isolated parallel subagents.",
+      "path": "plugins/06-brainstorm-and-director/skills/parallel-sprint/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/parallel-sprint/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/parallel-sprint/SKILL.md"
+    },
+    "provider-connector": {
+      "slug": "provider-connector",
+      "slash": "/provider-connector",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when checking local tool readiness or connecting optional external API keys safely without pasting secrets into chat.",
+      "path": "plugins/getknown-core/skills/provider-connector/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/provider-connector/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/provider-connector/SKILL.md"
+    },
+    "publish-shortform": {
+      "slug": "publish-shortform",
+      "slash": "/publish-shortform",
+      "pluginId": "gk-video",
+      "pluginDir": "plugins/04-shortform-video-engine",
+      "description": "Use when packaging approved 9:16 reels with platform-native captions into a local review-pack.zip or publishing via configured social APIs.",
+      "path": "plugins/04-shortform-video-engine/skills/publish-shortform/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/publish-shortform/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/publish-shortform/SKILL.md"
+    },
+    "quickstart": {
+      "slug": "quickstart",
+      "slash": "/quickstart",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when starting a fresh marketing studio workspace to verify Node and local tools, register pack plugins, and open the Studio in your browser.",
+      "path": "plugins/getknown-core/skills/quickstart/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/quickstart/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/quickstart/SKILL.md"
+    },
+    "render-avatar-reel": {
+      "slug": "render-avatar-reel",
+      "slash": "/render-avatar-reel",
+      "pluginId": "gk-video",
+      "pluginDir": "plugins/04-shortform-video-engine",
+      "description": "Use when compositing a 60-second 9:16 short-form video with circular PiP avatar video or portrait, cleaned spoken audio, and synced captions.",
+      "path": "plugins/04-shortform-video-engine/skills/render-avatar-reel/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/render-avatar-reel/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/render-avatar-reel/SKILL.md"
+    },
+    "repurpose-pack": {
+      "slug": "repurpose-pack",
+      "slash": "/repurpose-pack",
+      "pluginId": "gk-agency",
+      "pluginDir": "plugins/05-agency-growth",
+      "description": "Use when turning a webinar transcript, course lesson, or long-form video into a multi-format social and content campaign matched to your installed pack.",
+      "path": "plugins/05-agency-growth/skills/repurpose-pack/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/skills/repurpose-pack/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/repurpose-pack/SKILL.md"
+    },
+    "review-board": {
+      "slug": "review-board",
+      "slash": "/review-board",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when opening the browser Approval Board, exporting local or encrypted client review packs, and applying saved human approval decisions.",
+      "path": "plugins/getknown-core/skills/review-board/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/review-board/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/review-board/SKILL.md"
+    },
+    "setup-marketer": {
+      "slug": "setup-marketer",
+      "slash": "/setup-marketer",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when setting up a marketing studio folder, creating brand workspaces, checking local Mac or Windows tools, or configuring Claude Desktop.",
+      "path": "plugins/getknown-core/skills/setup-marketer/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/setup-marketer/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/setup-marketer/SKILL.md"
+    },
+    "slide-deck": {
+      "slug": "slide-deck",
+      "slash": "/slide-deck",
+      "pluginId": "gk-design",
+      "pluginDir": "plugins/02-design-decks-pages",
+      "description": "Use when building viewport-locked 16:9 HTML, PDF, and PPTX presentation decks or 4:5 carousels styled in extracted client brand tokens.",
+      "path": "plugins/02-design-decks-pages/skills/slide-deck/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/skills/slide-deck/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/skills/slide-deck/SKILL.md"
+    },
+    "splicebay-studio": {
+      "slug": "splicebay-studio",
+      "slash": "/splicebay-studio",
+      "pluginId": "gk-video",
+      "pluginDir": "plugins/04-shortform-video-engine",
+      "description": "Use when cutting spoken retakes, trimming dead air, and balancing spoken audio locally or via an optional Splicebay Video Editor server.",
+      "path": "plugins/04-shortform-video-engine/skills/splicebay-studio/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/splicebay-studio/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/splicebay-studio/SKILL.md"
+    },
+    "topic-radar": {
+      "slug": "topic-radar",
+      "slash": "/topic-radar",
+      "pluginId": "gk-social",
+      "pluginDir": "plugins/01-social-tov",
+      "description": "Use when scanning industry news, RSS, Hacker News, Reddit, or optional connected research sources for high-signal content angles.",
+      "path": "plugins/01-social-tov/skills/topic-radar/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/skills/topic-radar/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/skills/topic-radar/SKILL.md"
+    },
+    "tov-extract": {
+      "slug": "tov-extract",
+      "slash": "/tov-extract",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when analyzing 3 to 20 sample posts or transcripts to build a structured Tone-of-Voice profile in your brand folder.",
+      "path": "plugins/getknown-core/skills/tov-extract/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/tov-extract/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/tov-extract/SKILL.md"
+    },
+    "what-worked": {
+      "slug": "what-worked",
+      "slash": "/what-worked",
+      "pluginId": "gk-social",
+      "pluginDir": "plugins/01-social-tov",
+      "description": "Use after Approval Board sign-off to diff human edits against drafts, log campaign learnings, and apply confirmed voice rules.",
+      "path": "plugins/01-social-tov/skills/what-worked/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/skills/what-worked/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/skills/what-worked/SKILL.md"
+    }
+  },
+  "commands": {
+    "run-brand-setup": {
+      "slug": "run-brand-setup",
+      "slash": "/run-brand-setup",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when setting up a new client workspace, extracting brand tokens from a website, seeding Tone of Voice, and checking providers.",
+      "path": "plugins/getknown-core/commands/run-brand-setup.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/commands/run-brand-setup.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/commands/run-brand-setup.md"
+    },
+    "run-competitor-audit": {
+      "slug": "run-competitor-audit",
+      "slash": "/run-competitor-audit",
+      "pluginId": "gk-agency",
+      "pluginDir": "plugins/05-agency-growth",
+      "description": "Use when running a 5-minute 7-channel competitor or prospect teardown and generating a prospect-branded audit deck, 2 sample posts, and 1 benchmark infographic.",
+      "path": "plugins/05-agency-growth/commands/run-competitor-audit.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/commands/run-competitor-audit.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/commands/run-competitor-audit.md"
+    },
+    "run-creative-director": {
+      "slug": "run-creative-director",
+      "slash": "/run-creative-director",
+      "pluginId": "gk-director",
+      "pluginDir": "plugins/06-brainstorm-and-director",
+      "description": "Use when brainstorming a campaign angle, directing a code-built Lemo-Opuscar or Remotion film, applying precision spring-physics UI and motion polish, or running a classic direct-response copywriting pass.",
+      "path": "plugins/06-brainstorm-and-director/commands/run-creative-director.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/commands/run-creative-director.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/commands/run-creative-director.md"
+    },
+    "run-daily-social": {
+      "slug": "run-daily-social",
+      "slash": "/run-daily-social",
+      "pluginId": "gk-social",
+      "pluginDir": "plugins/01-social-tov",
+      "description": "Use when running the daily social and channel copy workflow: topic radar scan, human-voice post drafting for LinkedIn, Instagram, X, or Telegram, Approval Board sign-off, and voice learning.",
+      "path": "plugins/01-social-tov/commands/run-daily-social.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/commands/run-daily-social.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/commands/run-daily-social.md"
+    },
+    "run-data-motion": {
+      "slug": "run-data-motion",
+      "slash": "/run-data-motion",
+      "pluginId": "gk-motion",
+      "pluginDir": "plugins/03-animated-infographics",
+      "description": "Use when creating LinkedIn creator infographics or 30fps animated data visuals in 1080x1350 4:5 format.",
+      "path": "plugins/03-animated-infographics/commands/run-data-motion.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/commands/run-data-motion.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/commands/run-data-motion.md"
+    },
+    "run-deck-or-page": {
+      "slug": "run-deck-or-page",
+      "slash": "/run-deck-or-page",
+      "pluginId": "gk-design",
+      "pluginDir": "plugins/02-design-decks-pages",
+      "description": "Use when building branded social banner packs, 16:9 HTML/PDF/PPTX slide decks, or lead-magnet and webinar landing pages.",
+      "path": "plugins/02-design-decks-pages/commands/run-deck-or-page.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/commands/run-deck-or-page.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/commands/run-deck-or-page.md"
+    },
+    "run-short-video": {
+      "slug": "run-short-video",
+      "slash": "/run-short-video",
+      "pluginId": "gk-video",
+      "pluginDir": "plugins/04-shortform-video-engine",
+      "description": "Use when turning a brand teardown or raw talking-head take into a ready-to-publish 9:16 short-form video reel with PiP avatar and captions.",
+      "path": "plugins/04-shortform-video-engine/commands/run-short-video.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/commands/run-short-video.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/commands/run-short-video.md"
+    }
+  },
+  "agents": {
+    "gk-renderer": {
+      "slug": "gk-renderer",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use for forked HTML/SVG banner generation, 16:9 slide decks, CRO launch pages, 1080x1350 animated infographics, and 9:16 PiP video rendering.",
+      "path": "plugins/getknown-core/agents/gk-renderer.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/agents/gk-renderer.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/agents/gk-renderer.md"
+    },
+    "gk-researcher": {
+      "slug": "gk-researcher",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use for forked brand CSS/HTML extraction, 7-channel web/social teardowns, topic radar scans, visual proof harvesting, and layout vision deconstruction.",
+      "path": "plugins/getknown-core/agents/gk-researcher.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/agents/gk-researcher.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/agents/gk-researcher.md"
+    }
+  },
+  "templateCatalog": null,
+  "files": [
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "kind": "marketplace",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/.claude-plugin/marketplace.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/.claude-plugin/marketplace.json"
+    },
+    {
+      "path": "plugins/01-social-tov/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/01-social-tov/commands/run-daily-social.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/commands/run-daily-social.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/commands/run-daily-social.md"
+    },
+    {
+      "path": "plugins/01-social-tov/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/README.md"
+    },
+    {
+      "path": "plugins/01-social-tov/skills/draft-post/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/skills/draft-post/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/skills/draft-post/SKILL.md"
+    },
+    {
+      "path": "plugins/01-social-tov/skills/topic-radar/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/skills/topic-radar/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/skills/topic-radar/SKILL.md"
+    },
+    {
+      "path": "plugins/01-social-tov/skills/what-worked/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/01-social-tov/skills/what-worked/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/skills/what-worked/SKILL.md"
+    },
+    {
+      "path": "plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/02-design-decks-pages/commands/run-deck-or-page.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/commands/run-deck-or-page.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/commands/run-deck-or-page.md"
+    },
+    {
+      "path": "plugins/02-design-decks-pages/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/README.md"
+    },
+    {
+      "path": "plugins/02-design-decks-pages/skills/brand-banners/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/skills/brand-banners/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/skills/brand-banners/SKILL.md"
+    },
+    {
+      "path": "plugins/02-design-decks-pages/skills/launch-page/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/skills/launch-page/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/skills/launch-page/SKILL.md"
+    },
+    {
+      "path": "plugins/02-design-decks-pages/skills/slide-deck/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/02-design-decks-pages/skills/slide-deck/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/skills/slide-deck/SKILL.md"
+    },
+    {
+      "path": "plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/03-animated-infographics/commands/run-data-motion.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/commands/run-data-motion.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/commands/run-data-motion.md"
+    },
+    {
+      "path": "plugins/03-animated-infographics/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/README.md"
+    },
+    {
+      "path": "plugins/03-animated-infographics/skills/build-infographic/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/skills/build-infographic/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/build-infographic/SKILL.md"
+    },
+    {
+      "path": "plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/skills/clone-layout-style/SKILL.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/commands/run-short-video.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/commands/run-short-video.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/commands/run-short-video.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/README.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/skills/brand-teardown-script/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/brand-teardown-script/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/brand-teardown-script/SKILL.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/skills/publish-shortform/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/publish-shortform/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/publish-shortform/SKILL.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/skills/render-avatar-reel/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/render-avatar-reel/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/render-avatar-reel/SKILL.md"
+    },
+    {
+      "path": "plugins/04-shortform-video-engine/skills/splicebay-studio/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/splicebay-studio/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/splicebay-studio/SKILL.md"
+    },
+    {
+      "path": "plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/05-agency-growth/commands/run-competitor-audit.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/commands/run-competitor-audit.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/commands/run-competitor-audit.md"
+    },
+    {
+      "path": "plugins/05-agency-growth/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/README.md"
+    },
+    {
+      "path": "plugins/05-agency-growth/skills/client-audit-pack/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/skills/client-audit-pack/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/client-audit-pack/SKILL.md"
+    },
+    {
+      "path": "plugins/05-agency-growth/skills/repurpose-pack/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/05-agency-growth/skills/repurpose-pack/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/skills/repurpose-pack/SKILL.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/commands/run-creative-director.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/commands/run-creative-director.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/commands/run-creative-director.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/README.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/skills/brainstorm-angle/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/brainstorm-angle/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/brainstorm-angle/SKILL.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/skills/copy-legend/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/copy-legend/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/copy-legend/SKILL.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/skills/emil-design-polish/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/emil-design-polish/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/emil-design-polish/SKILL.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/skills/opuscar-director/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/opuscar-director/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/opuscar-director/SKILL.md"
+    },
+    {
+      "path": "plugins/06-brainstorm-and-director/skills/parallel-sprint/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/06-brainstorm-and-director/skills/parallel-sprint/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/skills/parallel-sprint/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/.claude-plugin/plugin.json",
+      "kind": "plugin-manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/.claude-plugin/plugin.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/.claude-plugin/plugin.json"
+    },
+    {
+      "path": "plugins/getknown-core/agents/gk-renderer.md",
+      "kind": "agent",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/agents/gk-renderer.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/agents/gk-renderer.md"
+    },
+    {
+      "path": "plugins/getknown-core/agents/gk-researcher.md",
+      "kind": "agent",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/agents/gk-researcher.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/agents/gk-researcher.md"
+    },
+    {
+      "path": "plugins/getknown-core/commands/run-brand-setup.md",
+      "kind": "command",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/commands/run-brand-setup.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/commands/run-brand-setup.md"
+    },
+    {
+      "path": "plugins/getknown-core/README.md",
+      "kind": "plugin-readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/README.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/brand-extract/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/brand-extract/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/brand-extract/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/claude-md-builder/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/claude-md-builder/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/claude-md-builder/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/cost-check/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/cost-check/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/cost-check/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/discover-claude-code/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/panic-undo/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/panic-undo/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/panic-undo/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/provider-connector/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/provider-connector/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/provider-connector/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/quickstart/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/quickstart/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/quickstart/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/review-board/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/review-board/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/review-board/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/setup-marketer/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/setup-marketer/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/setup-marketer/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/tov-extract/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/tov-extract/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/tov-extract/SKILL.md"
+    },
+    {
+      "path": "public-files-manifest.json",
+      "kind": "manifest",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/public-files-manifest.json",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/public-files-manifest.json"
+    },
+    {
+      "path": "README.md",
+      "kind": "readme",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/README.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/README.md"
+    }
+  ]
+}

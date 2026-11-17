@@ -1,0 +1,22 @@
+{
+  "name": "gk-video",
+  "version": "1.2.3",
+  "description": "Short-Form Video & Talking-Head PiP Reel Engine (9:16): write 60-second website teardown scripts, capture live proof screenshots, trim silences and retakes locally on your Mac, render 1080x1920 Picture-in-Picture reels, and package platform captions.",
+  "author": {
+    "name": "GetKnown Marketing Studio"
+  },
+  "keywords": [
+    "shortform-video",
+    "reels",
+    "tiktok",
+    "youtube-shorts",
+    "avatar-pip"
+  ],
+  "skills": [
+    "./skills/brand-teardown-script",
+    "./skills/harvest-visual-proof",
+    "./skills/publish-shortform",
+    "./skills/render-avatar-reel",
+    "./skills/splicebay-studio"
+  ]
+}

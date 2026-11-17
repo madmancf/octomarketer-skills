@@ -1,0 +1,28 @@
+{
+  "name": "gk",
+  "version": "1.2.3",
+  "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+  "author": {
+    "name": "GetKnown Marketing Studio"
+  },
+  "keywords": [
+    "marketing",
+    "agency",
+    "claude-code",
+    "design-system",
+    "tone-of-voice",
+    "approval-board"
+  ],
+  "skills": [
+    "./skills/brand-extract",
+    "./skills/claude-md-builder",
+    "./skills/cost-check",
+    "./skills/discover-claude-code",
+    "./skills/panic-undo",
+    "./skills/provider-connector",
+    "./skills/quickstart",
+    "./skills/review-board",
+    "./skills/setup-marketer",
+    "./skills/tov-extract"
+  ]
+}

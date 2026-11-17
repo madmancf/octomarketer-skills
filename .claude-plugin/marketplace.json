@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "getknown-suite",
+  "version": "1.2.3",
+  "description": "GetKnown Marketing Studio for Claude.app: modular brand setup, voice profile, slide deck, animated infographic, 9:16 video, prospect audit, and creative direction workflows.",
+  "metadata": {
+    "version": "1.2.3",
+    "brandId": "getknown",
+    "studioName": "GetKnown Marketing Studio",
+    "description": "GetKnown Marketing Studio for Claude.app: modular brand setup, voice profile, slide deck, animated infographic, 9:16 video, prospect audit, and creative direction workflows."
+  },
+  "owner": {
+    "name": "GetKnown Marketing Studio",
+    "url": "https://getknown.online"
+  },
+  "plugins": [
+    {
+      "name": "gk",
+      "version": "1.2.3",
+      "description": "Core Studio plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+      "source": "./plugins/getknown-core"
+    },
+    {
+      "name": "gk-social",
+      "version": "1.2.3",
+      "description": "Social Content & Brand Voice Engine: timely industry topic research, LinkedIn, Instagram, X, and Telegram post drafting, and voice learning from your approved edits.",
+      "source": "./plugins/01-social-tov"
+    },
+    {
+      "name": "gk-design",
+      "version": "1.2.3",
+      "description": "Branded Banners, Slide Decks & Landing Pages: multi-size PNG social banners, 16:9 and 4:5 HTML, PDF, and editable PowerPoint decks, and conversion landing pages.",
+      "source": "./plugins/02-design-decks-pages"
+    },
+    {
+      "name": "gk-motion",
+      "version": "1.2.3",
+      "description": "Animated Infographics & Carousels: reference layout builder and animated LinkedIn infographic, PNG, and PDF card exporter.",
+      "source": "./plugins/03-animated-infographics"
+    },
+    {
+      "name": "gk-video",
+      "version": "1.2.3",
+      "description": "9:16 Short-Form Video & Reel Engine: 60-second website teardown scriptwriter, live proof screenshot capture, local silence and retake cleanup, and talking-head Picture-in-Picture reels.",
+      "source": "./plugins/04-shortform-video-engine"
+    },
+    {
+      "name": "gk-agency",
+      "version": "1.2.3",
+      "description": "Agency Prospect Audit & Content Repurposing: 5-minute prospect website audit deck (/client-audit-pack) and webinar-to-campaign sprint multiplier (/repurpose-pack).",
+      "source": "./plugins/05-agency-growth"
+    },
+    {
+      "name": "gk-director",
+      "version": "1.2.3",
+      "description": "Campaign Brainstorm, Motion Styles & Direct-Response Hooks: focused positioning questions (/brainstorm-angle), precision UI and motion polish (/emil-design-polish), 99 commercial motion presets (/opuscar-director), classic direct-response copywriting structures (/copy-legend), and parallel multi-brand sprints (/parallel-sprint).",
+      "source": "./plugins/06-brainstorm-and-director"
+    }
+  ]
+}
