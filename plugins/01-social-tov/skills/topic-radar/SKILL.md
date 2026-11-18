@@ -25,7 +25,7 @@ Check configured services via `./plugins/getknown-core/bin/gk provider-health --
 
 ## Step 2: Score & Filter Candidate Topics
 
-Score each raw finding against `clients/<client>/CLAUDE.md` and `tov/tov.md`:
+Score each raw finding against `CLAUDE.md`, `brand/icp.md` (when present in `./brand/icp.md` or `clients/<client>/brand/icp.md`, using `## 1. Quick-Reference Card` and `## 7. Watering Holes` for real communities, triggers, and disqualifiers), and `tov/tov.md`:
 - **Specificity Check:** Does it name a real company, number, workflow change, or concrete mistake? Reject vague "AI is changing marketing" angles.
 - **Practitioner Angle:** What direct experience does our client bring to this topic?
 - **Visual Potential:** Can this topic anchor a `comparison-grid` or `iceberg-breakdown` infographic (when `03-animated-infographics` is installed) or a swipe carousel (`/slide-deck`)?

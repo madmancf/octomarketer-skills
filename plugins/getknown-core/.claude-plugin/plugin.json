@@ -1,7 +1,7 @@
 {
   "name": "gk",
   "version": "1.3.0",
-  "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+  "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Ideal Customer Profile (/icp) dossier builder, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
   "author": {
     "name": "GetKnown Marketing Studio"
   },
@@ -10,6 +10,7 @@
     "agency",
     "claude-code",
     "design-system",
+    "icp",
     "tone-of-voice",
     "approval-board"
   ],
@@ -19,6 +20,7 @@
     "./skills/claude-md-builder",
     "./skills/cost-check",
     "./skills/discover-claude-code",
+    "./skills/icp",
     "./skills/panic-undo",
     "./skills/provider-connector",
     "./skills/quickstart",

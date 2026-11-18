@@ -1,6 +1,6 @@
 # `gk` (getknown-core)
 
-Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.
+Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Ideal Customer Profile (/icp) dossier builder, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.
 
 - **Plugin Manifest:** [`.claude-plugin/plugin.json`](./.claude-plugin/plugin.json) ([Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/.claude-plugin/plugin.json))
 - **Models:** **Claude Opus 5.5** (`claude-opus-5-5`) for strategy, voice, decks, and creative direction; **Claude Sonnet 5.5** (`claude-sonnet-5-5`, `high` effort) for diagnostics, daily drafts, and subagent runs.
@@ -9,7 +9,7 @@ Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, websi
 
 - [`/run-brand-setup`](./commands/run-brand-setup.md) ([Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/commands/run-brand-setup.md)): Use when setting up a new client workspace, extracting brand tokens from a website, seeding Tone of Voice, and checking providers.
 
-## Skills (11)
+## Skills (12)
 
 | Skill | Description | Source |
 |---|---|---|
@@ -18,6 +18,7 @@ Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, websi
 | `/claude-md-builder` | Backwards-compatible alias for /claude-md: create, update, or compact global (<=60 lines), project (<=120 lines), and per-client (<=150 lines) CLAUDE.md instruction files. | [SKILL.md](./skills/claude-md-builder/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/claude-md-builder/SKILL.md) |
 | `/cost-check` | Use before running optional external paid APIs to check or reserve estimated USD spend against per-run and daily safety limits. | [SKILL.md](./skills/cost-check/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/cost-check/SKILL.md) |
 | `/discover-claude-code` | Use when onboarding a marketer to Claude Desktop, explaining brand folders, slash commands, and visual browser pages. | [SKILL.md](./skills/discover-claude-code/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md) |
+| `/icp` | Use when building, auditing, or updating a brand's Ideal Customer Profile (ICP), buyer segments, JTBD triggers, verbatim buyer language, and qualification scorecard from existing brand materials, call notes, CRM data, or website. | [SKILL.md](./skills/icp/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/SKILL.md) |
 | `/panic-undo` | Use when the user wants to preview or roll back the last change to their voice file, brand design guide, instruction sheet, or campaign drafts. | [SKILL.md](./skills/panic-undo/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/panic-undo/SKILL.md) |
 | `/provider-connector` | Use when checking local tool readiness or connecting optional external API keys safely without pasting secrets into chat. | [SKILL.md](./skills/provider-connector/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/provider-connector/SKILL.md) |
 | `/quickstart` | Use when setting up any new or existing project folder: asks brand URL/materials and frequent job types, configures Always-Active vs 0-token on-demand skills, extracts Brand and Tone-of-Voice .md files, writes ./CLAUDE.md, and stops cleanly. | [SKILL.md](./skills/quickstart/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/quickstart/SKILL.md) |

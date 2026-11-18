@@ -12,12 +12,13 @@ Write clear, human-sounding posts for LinkedIn, Instagram, X, and Telegram groun
 
 ## Step 1: Load Client Voice Memory & Campaign Brief
 
-Read these files before drafting:
-1. `clients/<client>/CLAUDE.md` (Audience ICP, live offer details, pricing, hard taboos, and active channels; never target channels the client does not run)
-2. `clients/<client>/tov/tov.md` (Sentence cadence, hook patterns, real vocabulary, and learned `L-*` edit rules)
-3. `clients/<client>/tov/winners/` (At least 1 winning post or `[Example]` reference to match cadence)
-4. `clients/<client>/tov/anti-examples/` (Rejected phrasing patterns to avoid)
-5. `clients/<client>/campaigns/<sprint>/campaign-brief.json` (Verified facts and source URLs; never invent study numbers or unverified benchmarks)
+Read these files before drafting (from `./` or `clients/<client>/`):
+1. `CLAUDE.md` (Audience ICP summary, live offer details, pricing, hard taboos, and active channels; never target channels the client does not run)
+2. `brand/icp.md` when present (load `## 1. Quick-Reference Card` first for narrowing traits, urgent triggers, and `X over Y` copy rules, plus `## 6. Verbatim VoC Language Bank` for exact buyer phrases and distrusted words)
+3. `tov/tov.md` (Sentence cadence, hook patterns, real vocabulary, and learned `L-*` edit rules)
+4. `tov/winners/` (At least 1 winning post or `[Example]` reference to match cadence)
+5. `tov/anti-examples/` (Rejected phrasing patterns to avoid)
+6. `campaigns/<sprint>/campaign-brief.json` (Verified facts and source URLs; never invent study numbers or unverified benchmarks)
 
 ## Step 2: Draft Platform-Native Copy
 

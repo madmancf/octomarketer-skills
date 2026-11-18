@@ -21,11 +21,11 @@
   },
   "counts": {
     "plugins": 7,
-    "skills": 31,
+    "skills": 32,
     "commands": 7,
     "agents": 2,
     "templates": 70,
-    "files": 58
+    "files": 61
   },
   "plugins": {
     "gk": {
@@ -33,7 +33,7 @@
       "dir": "plugins/getknown-core",
       "dirName": "getknown-core",
       "version": "1.3.0",
-      "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+      "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Ideal Customer Profile (/icp) dossier builder, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
       "path": "plugins/getknown-core/.claude-plugin/plugin.json",
       "readmePath": "plugins/getknown-core/README.md",
       "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/getknown-core",
@@ -47,6 +47,7 @@
         "claude-md-builder",
         "cost-check",
         "discover-claude-code",
+        "icp",
         "panic-undo",
         "provider-connector",
         "quickstart",
@@ -209,7 +210,7 @@
       "dir": "plugins/getknown-core",
       "dirName": "getknown-core",
       "version": "1.3.0",
-      "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
+      "description": "Core Studio Base Plugin: guided /quickstart setup, brand folder organizer, website color and font extractor, Ideal Customer Profile (/icp) dossier builder, Brand Voice Guide builder, visual Approval Board, and automatic backup restore.",
       "path": "plugins/getknown-core/.claude-plugin/plugin.json",
       "readmePath": "plugins/getknown-core/README.md",
       "treeUrl": "https://github.com/madmancf/octomarketer-skills/tree/main/plugins/getknown-core",
@@ -223,6 +224,7 @@
         "claude-md-builder",
         "cost-check",
         "discover-claude-code",
+        "icp",
         "panic-undo",
         "provider-connector",
         "quickstart",
@@ -529,6 +531,30 @@
       "path": "plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md",
       "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md",
       "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/04-shortform-video-engine/skills/harvest-visual-proof/SKILL.md"
+    },
+    "icp": {
+      "slug": "icp",
+      "slash": "/icp",
+      "pluginId": "gk",
+      "pluginDir": "plugins/getknown-core",
+      "description": "Use when building, auditing, or updating a brand's Ideal Customer Profile (ICP), buyer segments, JTBD triggers, verbatim buyer language, and qualification scorecard from existing brand materials, call notes, CRM data, or website.",
+      "path": "plugins/getknown-core/skills/icp/SKILL.md",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/icp/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/SKILL.md",
+      "references": [
+        {
+          "name": "evidence-and-tracks",
+          "path": "plugins/getknown-core/skills/icp/references/evidence-and-tracks.md",
+          "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/icp/references/evidence-and-tracks.md",
+          "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/references/evidence-and-tracks.md"
+        },
+        {
+          "name": "icp-template",
+          "path": "plugins/getknown-core/skills/icp/references/icp-template.md",
+          "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/icp/references/icp-template.md",
+          "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/references/icp-template.md"
+        }
+      ]
     },
     "launch-page": {
       "slug": "launch-page",
@@ -1084,6 +1110,24 @@
       "kind": "skill",
       "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md",
       "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/icp/references/evidence-and-tracks.md",
+      "kind": "skill-reference",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/icp/references/evidence-and-tracks.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/references/evidence-and-tracks.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/icp/references/icp-template.md",
+      "kind": "skill-reference",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/icp/references/icp-template.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/references/icp-template.md"
+    },
+    {
+      "path": "plugins/getknown-core/skills/icp/SKILL.md",
+      "kind": "skill",
+      "blobUrl": "https://github.com/madmancf/octomarketer-skills/blob/main/plugins/getknown-core/skills/icp/SKILL.md",
+      "rawUrl": "https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/SKILL.md"
     },
     {
       "path": "plugins/getknown-core/skills/panic-undo/SKILL.md",

@@ -19,8 +19,8 @@ Keep both global and project instruction files crisp, grounded, and strictly wit
 
 2. **Project-Bound Layer (`./CLAUDE.md`, `<= 120` lines):**
    - **What belongs here:**
-     1. **Brand Summary:** Project/brand name, website URL, target audience ICP (1 to 2 sentences), and core offer (2 to 3 concrete bullets).
-     2. **Authoritative File Pointers:** Pointers to `./brand/design.md` (`./brand/tokens.json`) and `./tov/tov.md` (`<= 250` lines) instead of duplicating hex palettes or full post examples inside `./CLAUDE.md`.
+     1. **Brand Summary:** Project/brand name, website URL, target audience ICP (1 to 2 sentences, with `(full dossier in ./brand/icp.md)` when `./brand/icp.md` exists), and core offer (2 to 3 concrete bullets).
+     2. **Authoritative File Pointers:** Pointers to `./brand/design.md` (`./brand/tokens.json`), `./brand/icp.md` (when generated via `/icp`), and `./tov/tov.md` (`<= 250` lines) instead of duplicating hex palettes, full ICP tables, or full post examples inside `./CLAUDE.md`.
      3. **Active vs `/`-Only Skill Profile (`<!-- SKILL_PROFILE:START -->` .. `<!-- SKILL_PROFILE:END -->`):** Lists Always-Active packs + `#01..#70` template hints (so natural chat works immediately) alongside `0`-token on-demand `/<skill>` wrappers (`disable-model-invocation: true`).
      4. **Locked Guardrails:** Readability gate (`gk lint`), `/claude-md` routing rule, and `$0.00` local default / spend caps.
    - **Multi-Client Agency Subfolders (Optional):** When running a multi-client workspace under `./clients/<slug>/`, keep root `./CLAUDE.md <= 120` lines (`claude-md-root.tmpl.md`) and per-client `./clients/<slug>/CLAUDE.md <= 150` lines (`claude-md-client.tmpl.md`).

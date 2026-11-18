@@ -1,6 +1,6 @@
 # Octomarketer Skills & Plugin Reference (`Claude Code for Marketers`)
 
-Public plugin, skill, workflow command, and subagent reference for the **Claude Code for Marketers** 2-Day Intensive. This repository contains **7 plugins**, **31 skills**, **7 workflow commands**, and **2 subagents** with internal CLI runtimes, client fixtures, and local media bundles stripped out.
+Public plugin, skill, workflow command, and subagent reference for the **Claude Code for Marketers** 2-Day Intensive. This repository contains **7 plugins**, **32 skills**, **7 workflow commands**, and **2 subagents** with internal CLI runtimes, client fixtures, and local media bundles stripped out.
 
 ## Model Configuration (`Claude Opus 5.5` + `Claude Sonnet 5.5`)
 
@@ -18,7 +18,7 @@ Public plugin, skill, workflow command, and subagent reference for the **Claude 
 
 | Plugin ID | Folder | Skills | Workflow Command | Reference |
 |---|---|---|---|---|
-| `gk` | [`plugins/getknown-core`](./plugins/getknown-core/README.md) | 11 | `/run-brand-setup` | [plugin.json](./plugins/getknown-core/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/.claude-plugin/plugin.json) |
+| `gk` | [`plugins/getknown-core`](./plugins/getknown-core/README.md) | 12 | `/run-brand-setup` | [plugin.json](./plugins/getknown-core/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/.claude-plugin/plugin.json) |
 | `gk-social` | [`plugins/01-social-tov`](./plugins/01-social-tov/README.md) | 3 | `/run-daily-social` | [plugin.json](./plugins/01-social-tov/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/01-social-tov/.claude-plugin/plugin.json) |
 | `gk-design` | [`plugins/02-design-decks-pages`](./plugins/02-design-decks-pages/README.md) | 3 | `/run-deck-or-page` | [plugin.json](./plugins/02-design-decks-pages/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/02-design-decks-pages/.claude-plugin/plugin.json) |
 | `gk-motion` | [`plugins/03-animated-infographics`](./plugins/03-animated-infographics/README.md) | 2 | `/run-data-motion` | [plugin.json](./plugins/03-animated-infographics/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/03-animated-infographics/.claude-plugin/plugin.json) |
@@ -26,7 +26,7 @@ Public plugin, skill, workflow command, and subagent reference for the **Claude 
 | `gk-agency` | [`plugins/05-agency-growth`](./plugins/05-agency-growth/README.md) | 2 | `/run-competitor-audit` | [plugin.json](./plugins/05-agency-growth/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/05-agency-growth/.claude-plugin/plugin.json) |
 | `gk-director` | [`plugins/06-brainstorm-and-director`](./plugins/06-brainstorm-and-director/README.md) | 5 | `/run-creative-director` | [plugin.json](./plugins/06-brainstorm-and-director/.claude-plugin/plugin.json) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/06-brainstorm-and-director/.claude-plugin/plugin.json) |
 
-## Skills by Plugin (31 Total)
+## Skills by Plugin (32 Total)
 
 ### `gk` · [`plugins/getknown-core`](./plugins/getknown-core/README.md)
 
@@ -37,6 +37,7 @@ Public plugin, skill, workflow command, and subagent reference for the **Claude 
 | `/claude-md-builder` | Backwards-compatible alias for /claude-md: create, update, or compact global (<=60 lines), project (<=120 lines), and per-client (<=150 lines) CLAUDE.md instruction files. | [SKILL.md](./plugins/getknown-core/skills/claude-md-builder/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/claude-md-builder/SKILL.md) |
 | `/cost-check` | Use before running optional external paid APIs to check or reserve estimated USD spend against per-run and daily safety limits. | [SKILL.md](./plugins/getknown-core/skills/cost-check/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/cost-check/SKILL.md) |
 | `/discover-claude-code` | Use when onboarding a marketer to Claude Desktop, explaining brand folders, slash commands, and visual browser pages. | [SKILL.md](./plugins/getknown-core/skills/discover-claude-code/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/discover-claude-code/SKILL.md) |
+| `/icp` | Use when building, auditing, or updating a brand's Ideal Customer Profile (ICP), buyer segments, JTBD triggers, verbatim buyer language, and qualification scorecard from existing brand materials, call notes, CRM data, or website. | [SKILL.md](./plugins/getknown-core/skills/icp/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/icp/SKILL.md) |
 | `/panic-undo` | Use when the user wants to preview or roll back the last change to their voice file, brand design guide, instruction sheet, or campaign drafts. | [SKILL.md](./plugins/getknown-core/skills/panic-undo/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/panic-undo/SKILL.md) |
 | `/provider-connector` | Use when checking local tool readiness or connecting optional external API keys safely without pasting secrets into chat. | [SKILL.md](./plugins/getknown-core/skills/provider-connector/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/provider-connector/SKILL.md) |
 | `/quickstart` | Use when setting up any new or existing project folder: asks brand URL/materials and frequent job types, configures Always-Active vs 0-token on-demand skills, extracts Brand and Tone-of-Voice .md files, writes ./CLAUDE.md, and stops cleanly. | [SKILL.md](./plugins/getknown-core/skills/quickstart/SKILL.md) · [Raw](https://raw.githubusercontent.com/madmancf/octomarketer-skills/main/plugins/getknown-core/skills/quickstart/SKILL.md) |

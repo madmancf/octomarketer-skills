@@ -26,6 +26,7 @@ Build responsive, self-contained HTML campaign landing pages, workshop pages, or
 
 Read (from `./` or `clients/<client>/`):
 - `brand/tokens.json` & `brand/design.md`
+- `brand/icp.md` when present (`## 1. Quick-Reference Card` for narrowing traits and tradeoffs, plus `## 5`, `## 6`, and `## 8` to ground Problem Breakdown, Who This Fits qualification, and FAQ objections)
 - `tov/tov.md`
 - `CLAUDE.md`
 

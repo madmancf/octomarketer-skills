@@ -16,7 +16,7 @@ Apply 10 proven copywriting and behavioral conversion structures inside one skil
 | :--- | :--- | :--- |
 | **`classic-print`** | **Classic Direct-Response Print** | **Research-first editorial authority.** Factual headline with concrete numbers and outcome, story-driven captions under visuals, zero unsupported adjectives, read-aloud rhythm. |
 | **`sales-letter`** | **Long-Form Sales Letter** | **Personal letter & concrete stakes.** Opens on a specific scene or dollar-and-cents problem, short paragraphs, direct transitions, clear risk-reversed offer. |
-| **`customer-voice`** | **Voice-of-Customer Conversion** | **Verbatim buyer language.** Pulls exact buyer complaints from `sources/` or `tov/winners/`, uses Problem-Agitate-Solve, and writes outcome button copy ("Get [Outcome]"). |
+| **`customer-voice`** | **Voice-of-Customer Conversion** | **Verbatim buyer language.** Pulls exact buyer complaints from `brand/icp.md` (`## 6. Verbatim VoC Language Bank`), `sources/`, or `tov/winners/`, uses Problem-Agitate-Solve, and writes outcome button copy ("Get [Outcome]"). |
 | **`behavioral-reframe`** | **Behavioral Value Reframe** | **Perceived effort & certainty.** Finds why buyers hesitate even when the math works and reframes perceived effort, certainty, or status. |
 | **`scientific-proof`** | **Process & Receipt Specificity** | **Documented mechanism.** Names the exact hours, checks, or steps behind the deliverable with concrete numbers instead of vague claims. |
 | **`distinctive-reach`** | **Category Entry & Distinctive Cues** | **Mental availability.** Anchors to clear category buying moments and repeats recognizable visual and verbal brand cues. |
@@ -30,7 +30,7 @@ Apply 10 proven copywriting and behavioral conversion structures inside one skil
 ## Execution Rules
 
 1. **Client Voice First, Structural Lens Second:**
-   - Load `clients/<slug>/tov/tov.md` and `clients/<slug>/CLAUDE.md` first.
+   - Load `tov/tov.md`, `CLAUDE.md`, and `brand/icp.md` when present (`./brand/icp.md` or `clients/<slug>/brand/icp.md`, reading `## 1. Quick-Reference Card` first and `## 5`..`## 6` for switching anxieties and verbatim buyer phrasing).
    - Apply the chosen lens's **argument structure**, keeping modern client vocabulary and verified facts only.
 2. **Verify Every Draft With `gk lint`:**
    ```bash

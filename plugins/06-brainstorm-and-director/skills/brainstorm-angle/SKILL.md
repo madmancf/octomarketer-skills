@@ -14,13 +14,13 @@ Run a focused positioning interview before drafting copy, slides, or video scrip
 
 1. **Lock the angle before writing deliverables.** Jumping straight from a broad topic ("write a post about our product") to finished copy produces generic output.
 2. **Ask ONE question per turn.** Offer 3 specific options (recommended option first with 1 sentence on why) and wait for the answer.
-3. **Read the client's existing files & installed pack plugins first.** Inspect `./plugins/` and load `clients/<slug>/CLAUDE.md`, `clients/<slug>/tov/tov.md`, and `clients/<slug>/brand/tokens.json` before Question 1 (if no real client folder exists yet, ask for the brand name and initialize it via `./plugins/getknown-core/bin/gk client init <slug>`).
+3. **Read the client's existing files & installed pack plugins first.** Inspect `./plugins/` and load `CLAUDE.md`, `brand/icp.md` when present (`./brand/icp.md` or `clients/<slug>/brand/icp.md`, starting with `## 1. Quick-Reference Card` and `## 5. Jobs-to-be-Done, Triggers & Four Forces`), `tov/tov.md`, and `brand/tokens.json` before Question 1 (if in a multi-client workspace with no real client folder yet, ask for the brand name and initialize it via `./plugins/getknown-core/bin/gk client init <slug>`).
 
 ## The 4 Positioning Questions (One Per Turn)
 
 ### Question 1: Current Manual Workaround & Cost
 - Identify what manual workaround the buyer uses today before buying this offer (for example: pasting brand hexes into chat tabs 20 times a week, waiting days on slide formatting, or rebuilding pitch decks by hand) and what it costs in hours or missed deals.
-- Propose 3 concrete workarounds grounded in `clients/<slug>/CLAUDE.md`.
+- Propose 3 concrete workarounds grounded in `CLAUDE.md` and `brand/icp.md` (when present).
 
 ### Question 2: Specific Counter-Claim
 - Identify why standard industry advice fails here, and state one specific claim backed by a number, named process, or before/after comparison.

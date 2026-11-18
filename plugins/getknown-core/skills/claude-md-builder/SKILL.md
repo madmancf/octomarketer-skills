@@ -16,10 +16,10 @@ Backwards-compatible alias synced with `/claude-md` (`${CLAUDE_PLUGIN_ROOT}/skil
    - Personal identity, cross-project plain-English writing habits, privacy rules (never commit `.env` or paste API keys), and spend checks.
    - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-global.tmpl.md` (`gk claude-md --global`).
 2. **Project / Root File (`./CLAUDE.md`, `<= 120` lines):**
-   - Brand summary, pointers to `./brand/design.md` and `./tov/tov.md`, Always-Active vs `0`-token `/`-invocable skill table (`#01..#70` template hints), and locked guardrails (or multi-client `clients/<slug>/` routing when using `claude-md-root.tmpl.md`).
+   - Brand summary, pointers to `./brand/design.md`, `./brand/icp.md` (when generated via `/icp`), and `./tov/tov.md`, Always-Active vs `0`-token `/`-invocable skill table (`#01..#70` template hints), and locked guardrails (or multi-client `clients/<slug>/` routing when using `claude-md-root.tmpl.md`).
    - CLI: `gk claude-md --project` (syncs `.claude/settings.json` active packs automatically).
 3. **Per-Client Agency File (`./clients/<client-slug>/CLAUDE.md`, `<= 150` lines):**
-   - Scoped to one client brand (`gk client init <client-slug>`): audience ICP, core offer, positioning, hard taboos, and pointers to `brand/tokens.json` and `tov/tov.md`.
+   - Scoped to one client brand (`gk client init <client-slug>`): audience ICP summary (`brand/icp.md` when generated via `/icp`), core offer, positioning, hard taboos, and pointers to `brand/tokens.json` and `tov/tov.md`.
    - Template: `${CLAUDE_PLUGIN_ROOT}/templates/claude-md-client.tmpl.md`.
 
 ## Step-by-Step Execution

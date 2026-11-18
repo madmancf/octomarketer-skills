@@ -29,6 +29,8 @@ Build presentation-ready **16:9 slide decks** (`1920x1080`, `#04`) and **4:5 Lin
 
 ## Step 1: Structure the Chosen Spine
 
+Read `brand/tokens.json`, `brand/design.md`, `tov/tov.md`, `CLAUDE.md`, and `brand/icp.md` when present (from `./brand/icp.md` or `clients/<client>/brand/icp.md`, using `## 1. Quick-Reference Card` and `## 4. Buying Roles & Internal Pitch` to tailor executive pitch and problem slides).
+
 1. **`#05` `social-carousel-4x5` (`1080x1350`, 6 to 10 slides):**
    - **Slide 1 (Hook Cover):** Specific claim, eyebrow pill, and swipe cue in `colors.accent`.
    - **Slides 2-8 (Core Breakdown):** One idea per slide, max 35 words per slide, visual comparison or numbered step badge.
